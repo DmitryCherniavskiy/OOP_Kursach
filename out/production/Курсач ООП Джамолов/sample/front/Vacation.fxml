@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@DarkTheme.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.VacationController">
+   <children>
+      <TableView fx:id="table" prefHeight="369.0" prefWidth="602.0">
+        <columns>
+          <TableColumn fx:id="columnID" prefWidth="38.666656494140625" text="ID" />
+          <TableColumn fx:id="columnFullName" prefWidth="135.3333396911621" text="ФИО" />
+            <TableColumn fx:id="columnPosition" prefWidth="116.66664123535156" text="Должность" />
+            <TableColumn fx:id="columnVacStart" minWidth="0.0" prefWidth="81.3333740234375" text="Начало" />
+            <TableColumn fx:id="columnCost2" minWidth="0.0" prefWidth="0.0" text="Цена" />
+            <TableColumn fx:id="columnVacEnd" prefWidth="109.3333740234375" text="Конец" />
+            <TableColumn fx:id="columnType" prefWidth="101.99996948242188" text="Тип" />
+        </columns>
+      </TableView>
+      <Button fx:id="buttonFind" layoutX="415.0" layoutY="368.0" mnemonicParsing="false" onAction="#FindVac" prefHeight="33.0" prefWidth="90.0" text="Поиск" />
+      <TextField fx:id="textfieldFind" layoutY="371.0" prefHeight="33.0" prefWidth="415.0" />
+      <Button layoutX="504.0" layoutY="368.0" mnemonicParsing="false" onAction="#delVac" prefHeight="33.0" prefWidth="97.0" text="Удалить" />
+   </children>
+</AnchorPane>
